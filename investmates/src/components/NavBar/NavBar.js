@@ -25,7 +25,7 @@ export const NavBar=()=> {
         <Link to="/Simulator/simulator" className='link'>Simulator</Link>
         <Link to="/Counselling/counselling" className='link'>Counselling</Link>
         <div className="dropdown">
-          <Link className='news'>News</Link>
+          <Link className='link'>News</Link>
           <div className="dropdown-content">
             <Link to="/News/Financial">Financial</Link>
             <Link to="/News/Company">Companies</Link>
