@@ -17,7 +17,6 @@ export const Crypto=()=>{
         <ul>
             <li><a href="#stocks" class="menu-item">Stocks & Investing</a></li>
         </ul>
-        <h4>OTHERS</h4>
     </nav>
 </aside>)
 };
