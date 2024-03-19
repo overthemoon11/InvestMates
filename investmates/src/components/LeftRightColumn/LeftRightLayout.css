@@ -1,0 +1,16 @@
+/* LeftRightLayout.css */
+
+.page-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-column {
+  flex: 0.3; /* Adjust the flex value as needed */
+  background-color: white;
+}
+
+.right-column {
+  flex: 0.7; /* Adjust the flex value as needed */
+  background-color: #E3D6EB;
+}
