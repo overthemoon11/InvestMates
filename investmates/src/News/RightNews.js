@@ -13,7 +13,9 @@ const RightNews = ({ title }) => {
   const [noteInput, setNoteInput] = useState('');
   const apiKey = '8207fa107ccf4949a4ca9e07f5a3a039'; // Replace this with your News API key
   //https://newsapi.org/v2/everything?q=${newsType}&apiKey=8207fa107ccf4949a4ca9e07f5a3a039
+
   const history = createBrowserHistory();
+  console.log(history);
 
   useEffect(() => {
     fetchNews(newsType);
@@ -40,7 +42,7 @@ const RightNews = ({ title }) => {
     setSelectedNews(news);
     setShowArticle(true);
 
-    history.pushState(null, null, "/abc")
+    history.push(null, "/abc")
   };
 
   const handleLike = (news) => {
