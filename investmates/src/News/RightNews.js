@@ -11,11 +11,11 @@ const RightNews = ({ title }) => {
   const [likes, setLikes] = useState([]);
   const [collections, setCollections] = useState([]);
   const [noteInput, setNoteInput] = useState('');
-  const apiKey = '8207fa107ccf4949a4ca9e07f5a3a039'; // Replace this with your News API key
+  const apiKey = '101e2f362fb74c5e95afe8ee056b18db'; // Replace this with your News API key
   //https://newsapi.org/v2/everything?q=${newsType}&apiKey=8207fa107ccf4949a4ca9e07f5a3a039
 
-  const history = createBrowserHistory();
-  console.log(history);
+  // const history = createBrowserHistory();
+  // console.log(history);
 
   useEffect(() => {
     fetchNews(newsType);
@@ -42,7 +42,7 @@ const RightNews = ({ title }) => {
     setSelectedNews(news);
     setShowArticle(true);
 
-    history.push(null, "/abc")
+    // history.push(null, "/abc")
   };
 
   const handleLike = (news) => {
