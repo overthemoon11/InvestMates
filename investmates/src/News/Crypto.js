@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< Updated upstream
 import './News.css';
 
 export const Crypto=()=>{
@@ -19,4 +20,16 @@ export const Crypto=()=>{
         </ul>
     </nav>
 </aside>)
+=======
+import News from './News';
+
+const title = "Crypto"
+const content = ["1223", "abc"]
+export const Crypto = () => {
+
+    return <News
+        title={title}
+        content={content}
+    />
+>>>>>>> Stashed changes
 };
