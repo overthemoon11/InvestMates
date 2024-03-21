@@ -2,17 +2,22 @@
 
 .page-container {
   display: flex;
-  height: 100vh;
+  height: 100;
+  
 }
 
 .left-column {
   flex: 0.25; /* Adjust the flex value as needed */
   background-color: white;
-  padding:1.5%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  padding-bottom: 1.5%;
 }
 
 .right-column {
   flex: 0.75; /* Adjust the flex value as needed */
   background-color: #E3D6EB;
-  padding:1.5%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  padding-bottom: 1.5%;
 }
