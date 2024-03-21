@@ -2,7 +2,7 @@
 
 .page-container {
   display: flex;
-  height: 100vh;
+  height:fit-content;
 }
 
 .left-column {
@@ -15,4 +15,5 @@
   flex: 0.75; /* Adjust the flex value as needed */
   background-color: #E3D6EB;
   padding:1.5%;
+  padding-left: 3%;
 }
