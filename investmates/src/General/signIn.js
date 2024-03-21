@@ -6,7 +6,7 @@ import RightComponent from './RightComp.js';
 export const Counselling=()=>{
 
     useEffect(() => {
-        document.title = "InvestMates | Counselling"; 
+        document.title = "InvestMates | Sign In"; 
       }, []);
     
     return (

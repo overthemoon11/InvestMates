@@ -1,0 +1,41 @@
+.checkbox-group input[type ="checkbox"]{
+    cursor: pointer;
+}
+
+
+.sign-in-button{
+    background-color:#827ECD;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    padding: 10px 35px; 
+    border: none;
+    border-radius: 7.5px;
+    margin-top: 12%;
+    margin-bottom: 3.8em;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none; 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+
+.sign-in-button:hover {
+    background-color: #9995E1 ;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+
+.floatleft{
+    padding-top: 8.5em;
+    width:320px;
+    height:450px;
+}
+
+.floatright{
+    padding-top: 5em;
+    width:250px;
+    height:290px;
+}

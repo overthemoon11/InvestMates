@@ -1,0 +1,181 @@
+header{
+    padding-top: 0.5em;
+    height: 1em;
+  }
+  
+  
+  body {
+      font-family: 'Poppins',sans-serif;
+      margin: 0;
+      display: flex;   
+      flex-wrap: wrap; 
+      max-width: 100%;
+  }
+  
+  main{
+      padding: 0 5%;
+      display: block;
+  }
+  
+  
+  h2{
+      padding-top: 9.5%;
+      font-weight: bolder;
+      font-size: 2.2em;
+  }
+  
+  h3{
+      padding-top: 75px;
+      padding-left: 1.2em;
+      padding-bottom: 0.1em;
+      font-size: 2em;
+      font-family: 'Poppins';
+      font-weight: 600;
+      color: #0E3869;
+  }
+  
+  ul{
+      padding-left: 2.2em;
+      font-size: 1.4em;
+      font-weight:600;
+      color: #44619D;
+  }
+  
+  li{
+      margin-bottom: 1.5em;
+  }
+  
+  img{
+      width: 330px;
+      height: 330px;
+  }
+  
+  .floatleft{
+      align-content: center;
+      padding-left: 10%;
+      padding-top: 0.8em;
+      width:340px;
+      height:320px;
+      padding-bottom: 1.5em;
+  }
+  
+  
+  #left-section{
+      flex: 0 0 40%; /* Don't grow, don't shrink, start at 35% width of the parent */
+       /* Set a minimum width to prevent elements from becoming too small */
+      min-width: max-content;
+      max-width: 1280px;
+      max-height: fit-content;
+      background-color: #EFE8F5;
+      overflow: hidden;
+  }
+  
+  
+  #right-section{
+      flex: 1; /* Grow to fill the remaining space */
+      background-color: #FFFFFF;
+      padding-left: 12%;
+      overflow: hidden;
+  }
+  
+  
+  .box input{
+     width: 60%;
+     margin-top: 12px;
+     padding: 10px;
+     border-radius: 2px;
+     border: 1px solid black;
+  }
+  
+  
+  .terms-checkbox{
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px; 
+      color: #000; /* Color for the text */
+      padding-top: 0.2em;
+      display: flex;
+      align-items:center;
+      gap: 0.5em; /* Add space between the checkbox and the text */
+  }
+  
+  .terms-checkbox input[type="checkbox"] {
+      margin-right: 0%; /* Space between the checkbox and the text */
+      cursor: pointer;
+  }
+  
+  .terms-checkbox a {
+      color: #6847ED; /* Color for the link */
+      font-weight: bolder;
+      text-decoration: none; 
+  }
+  
+  .terms-checkbox a:hover {
+      color: #6847ED;
+      text-decoration: underline; /* Add underline on hover for the link */
+  }
+  
+  .registerBtn{
+      background-color:#827ECD;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.9em;
+      padding: 10px 35px;  /* Top/bottom and left/right padding */
+      border: none;
+      border-radius: 7.5px;
+      margin-left: 22%;
+      cursor: pointer; /* Cursor changes to a hand when you hover over the button */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+      outline: none; /* Removes the outline to prevent a blue border on click on some browsers */
+      transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */ 
+  }
+  
+  
+  .registerBtn:hover {
+      background-color: #9995E1 ;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow for a "lifted" effect */
+  
+  }
+  
+  
+  .or-container{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin-top: 3%;
+      margin-left: 100px;
+      margin-right: 125px;
+  }
+  
+  .line{
+      width: 13%;
+      height: 1.5px;
+      background-color: #000;
+      margin: 0px 15px;
+  }
+  
+  .or-text{
+      display: inline;
+      color: #000;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      margin: 0px 15px;
+  }
+  
+  .signIn{
+      text-decoration: none;
+      color: #5690DB;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      display: block;
+      margin: 3% 25.5%;
+      cursor: pointer;
+  }
+  
+  .signIn:hover{
+      text-decoration: underline;
+      font-weight: bold;
+  }
+  
+  
+  
+  
