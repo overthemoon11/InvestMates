@@ -1,67 +1,46 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Orders = () => {
-    const [orders, setOrders] = useState([]);
+const Order = () => {
+  // Hardcoded transaction data for demonstration
+  const hardcodedTransactions = [
+    {
+      date: '2022-03-25',
+      type: 'BUY',
+      stockName: 'TREE',
+      quantity: 800,
+      pricePerStock: 1.54,
+      totalAmount: 1232,
+    },
+    // Add more hardcoded transactions as needed
+  ];
 
-    // Function to handle adding an order
-    const addOrder = (order) => {
-        setOrders([...orders, order]);
-    };
-
-    // Function to format the date in the required format
-    const formatDate = (date) => {
-        const options = { year: 'numeric', month: 'short', day: 'numeric' };
-        return date.toLocaleDateString(undefined, options);
-    };
-
-    return (
-        <div>
-            {/* Button to add a sample order */}
-            <button
-                onClick={() =>
-                    addOrder({
-                        date: new Date(),
-                        companyName: 'Example Company',
-                        unitPrice: 100,
-                        status: 'Buy',
-                        quantity: 10,
-                    })
-                }
-            >
-                Add Sample Order
-            </button>
-
-            {/* Display orders */}
-            <div>
-                {orders.length > 0 ? (
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Company Name</th>
-                                <th>Unit Price</th>
-                                <th>Status</th>
-                                <th>Quantity</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {orders.map((order, index) => (
-                                <tr key={index}>
-                                    <td>{formatDate(order.date)}</td>
-                                    <td>{order.companyName}</td>
-                                    <td>{order.unitPrice}</td>
-                                    <td>{order.status}</td>
-                                    <td>{order.quantity}</td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                ) : (
-                    <p>No records available.</p>
-                )}
-            </div>
-        </div>
-    );
+  return (
+    <div className="order-container">
+      <h3 className="order-date">{hardcodedTransactions[0].date}</h3> {/* Displaying the date above the table */}
+      <table className="order-table">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Stock Name</th>
+            <th>Quantity</th>
+            <th>Price Per Stock</th>
+            <th>Total Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          {hardcodedTransactions.map((transaction, index) => (
+            <tr key={index}>
+              <td>{transaction.type}</td>
+              <td>{transaction.stockName}</td>
+              <td>{transaction.quantity}</td>
+              <td>{transaction.pricePerStock}</td>
+              <td>{transaction.totalAmount}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
 };
 
-export default Orders;
+export default Order;
