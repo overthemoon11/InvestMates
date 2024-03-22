@@ -19,5 +19,6 @@ body, html {
 .right-column {
   flex: 1; 
   background-color: rgba(227, 214, 235, 0.47);
+  height: max-content;
   padding:1.5%;
 }

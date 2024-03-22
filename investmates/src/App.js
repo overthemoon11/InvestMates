@@ -7,8 +7,8 @@ import { RegistrationPage } from './General/register';
 import { SignIn } from './General/signIn';
 import { Simulator } from './Simulator/simulator';
 import { Counselling } from './Counselling/counselling';
-import { Begining } from './Counselling/begining';
-import { Trading } from './Counselling/trading';
+import { Beginning} from './Counselling/beginning';
+import { Trading} from './Counselling/trading';
 import { About } from './About/about';
 import { NotFound } from './NotFound/notfound';
 import { Beginner } from './Academy/BeginnerBasics';
@@ -21,6 +21,7 @@ import { Company } from './News/Company';
 import { Crypto } from './News/Crypto';
 import { Financial } from './News/Financial';
 import { Government } from './News/Government';
+import { PartnerWebsite } from './Counselling/partnerWebsite';
 
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
 
             <Route path="/General/signIn" element={<SignIn />} />
             <Route path="/General/register" element={<RegistrationPage />} />
+            <Route path="/Counselling/partnerWebsite" element={<PartnerWebsite />} />
+
+
 
             <Route path="/Academy/BeginnerBasics" element={<><NavBar /><Beginner /></>} />
             <Route path="/Academy/CapitalMarket" element={<><NavBar /><Capital /></>} />
@@ -44,8 +48,9 @@ function App() {
             <Route path="/Simulator/simulator" element={<><NavBar /><Simulator /></>} />
             
             <Route path="/Counselling/counselling" element={<><NavBar /><Counselling /></>} />
-            <Route path="/Counselling/begining" element={<><NavBar /><Begining /></>} />
+            <Route path="/Counselling/beginning" element={<><NavBar /><Beginning /></>} />
             <Route path="/Counselling/trading" element={<><NavBar /><Trading /></>} />
+ 
             
             <Route path="/About/about" element={<><NavBar /><About /></>} />
             

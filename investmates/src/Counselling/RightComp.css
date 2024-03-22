@@ -2,4 +2,192 @@
     font-weight: bold;
     text-decoration: underline;
   }
+
+
+  .ContentWrapper{
+    margin-top: 2%;
+  }
   
+.counsellingPageContainer h3{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.6em;
+    padding-left: 1.2em;
+    color: #6964AF;
+    margin-top: 2.5px;
+    font-weight: bolder;
+}
+
+.content-article h4{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.6em;
+    padding-left: 1.2em;
+    color: black;
+    font-weight: bolder;   
+    margin-top: -0.1%;
+    padding-top: 2.5%;
+}
+
+.category{
+    margin-bottom: 10%;
+}
+
+
+.content-article {
+    background-color: white;
+    margin-bottom: 5em; 
+    margin-left: 2em;
+    padding: 10px; 
+    box-shadow: 1 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 1.8%;
+    border: 2px solid black;
+    width: 50em;
+    outline: black;
+    height: max-content;
+}
+
+
+.course-details{
+    display: flex;
+    margin-top: -1.5%;
+}
+
+.course{
+    display: flex;
+    width: 50em;
+    padding: 10px; 
+    margin-left: 2%;
+    margin-right: 2%;
+    border-bottom: 0.085rem solid black;
+}
+
+
+.course-info{
+    font-family: 'Poppins',sans-serif;
+    padding-left: 3em;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5%;
+    padding-bottom: 4%;
+}
+
+.course-info p{
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+.text-dark-blue {
+    color: #1E3769; 
+    font-weight: bolder;
+}
+
+.text-light-blue {
+    color: #4B679F; 
+    padding-left: 10px; 
+}
+
+
+.course-image{
+    padding-top: 1em;
+    padding-left: 1%;
+}
+
+
+.course-overview {
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    margin-bottom: 3.5%;
+    margin-top: -2%;
+
+}
+
+
+h6{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bolder;
+}
+
+.course-overview p{
+    color: black;
+    font-family: 'Poppins',sans-serif;
+    font-size: 0.95em;
+    margin-top: -4%;
+    padding-bottom: 1%;
+}
+
+
+.special-h6{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bolder;
+    margin-top: -0.1%;
+}
+
+.overview-h6{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bolder;
+    margin-top: -0.05%;
+}
+
+
+.course-learn{
+    color: black;
+    font-weight: lighter;
+    margin-left: -6.5%;
+    margin-top: -3.5%;
+    font-size: 1.1em;
+    padding-bottom: 2.5%;
+}
+
+
+.registerLinkBtn-Begin{
+    background-color:#827ECD;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    padding: 10px 35px;  
+    border: none;
+    border-radius: 7.5px;
+    margin-left: 0%;
+    margin-top: -1%;
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    outline: none; 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+
+.registerLinkBtn-Begin:hover {
+    background-color: #9995E1 ;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow for a "lifted" effect */
+}
+
+
+
+.registerLinkBtn{
+    background-color:#827ECD;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    padding: 10px 35px;  
+    border: none;
+    border-radius: 7.5px;
+    margin-left: 0%;
+    margin-top: -1%;
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    outline: none; 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+
+.registerLinkBtn:hover {
+    background-color: #9995E1 ;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow for a "lifted" effect */
+}
+
+

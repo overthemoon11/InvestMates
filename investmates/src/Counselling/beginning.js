@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import LeftRightLayout from '../components/LeftRightColumn/LeftRightLayout.js';
 import LeftComponent from './LeftComp.js'; 
 import RightComponent from './RightComp.js'; 
+import BeginnerComponent from './beginContent.js'; 
 
-export const Begining=()=>{
+export const Beginning=()=>{
 
     useEffect(() => {
         document.title = "InvestMates | Stock Market for Beginners"; 
@@ -13,7 +14,7 @@ export const Begining=()=>{
         <div className="column-container">
             <LeftRightLayout
                 leftComponent={<LeftComponent />}
-                rightComponent={<RightComponent />}
+                rightComponent={<BeginnerComponent/>}
             />
         </div>
     )

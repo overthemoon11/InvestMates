@@ -45,38 +45,38 @@ export const SignIn=()=>{
             <div className = "SignInMain">
 
                 <div>
-                    <img class = "floatleft" src={characterLeft}/>
+                    <img className = "floatleft" src={characterLeft}/>
                 </div>
 
 
-                <div class ="login-container">
+                <div className ="login-container">
                 
-                    <div class = "login-box">
+                    <div className = "login-box">
 
                         <h2>Sign In</h2>
             
                         <form onSubmit={handleSubmit}>
-                            <div class = "input-group">
+                            <div className = "input-group">
                                 <label for = "email">Email Address</label>
                                   <input type = "email" id="email"  placeholder="Enter Your Email Address" required></input>
                             </div>
 
-                            <div class = "input-group">
+                            <div className = "input-group">
                                 <label for = "password">Password</label>
                                 <input type = "password" id="password"  placeholder="Enter Your Password" required></input>
                             </div>
 
-                            <div class = "checkbox-group">
+                            <div className = "checkbox-group">
                                 <input type = "checkbox" id="rmbrMe"></input>
                                 <label for = "Remember Me">Remember Me</label>
 
                             </div>
 
-                            <div class="Register">
+                            <div className="Register">
                                 
                             </div>
                             <Link className="registerLink" to='/General/register'>Don't have an account ? Register Now</Link>
-                            <button type="submit" class = "sign-in-button">Sign In</button>                    
+                            <button type="submit" className = "sign-in-button">Sign In</button>                    
                         </form>
                     </div>
 
