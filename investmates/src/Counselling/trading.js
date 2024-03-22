@@ -3,10 +3,10 @@ import LeftRightLayout from '../components/LeftRightColumn/LeftRightLayout.js';
 import LeftComponent from './LeftComp.js'; 
 import RightComponent from './RightComp.js'; 
 
-export const Counselling=()=>{
+export const Trading=()=>{
 
     useEffect(() => {
-        document.title = "InvestMates | Counselling"; 
+        document.title = "InvestMates | Simple Trading"; 
       }, []);
     
     return (
@@ -14,8 +14,7 @@ export const Counselling=()=>{
             <LeftRightLayout
                 leftComponent={<LeftComponent />}
                 rightComponent={<RightComponent />}
-                />
+            />
         </div>
     )
-
 };

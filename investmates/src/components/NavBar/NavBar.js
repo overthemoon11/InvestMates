@@ -1,6 +1,6 @@
-
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useAuth } from '../../Context/AuthContext';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/logohorizontal.png';
 import profilePic from '../../assets/images/profilePic.png';
 import './NavBar.css';
@@ -8,16 +8,34 @@ import './NavBar.css';
 export const NavBar=()=> {
 
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const navigate = useNavigate();
 
-  const handleAuthClick = () => {
-    setIsAuthenticated(!isAuthenticated);
+  const handleAuthClick = () =>{
+    if (isAuthenticated) {
+      localStorage.removeItem('authToken');
+      setIsAuthenticated(false);
+      navigate('/Academy/BeginnerBasics');
+    } else {
+      navigate('/General/signIn');
+    }
   };
 
+
+  useEffect(() => {
+    document.title = "InvestMates | HomePage"; 
+    const token = localStorage.getItem('authToken');
+    if (token) {
+      setIsAuthenticated(true);
+    }
+  }, []);
+
+
+  
   return (
     
     <header className='header'>
       <div className='logo'>
-        <img src={logo} alt=" Website Logo" />
+        <img src={logo} alt="Website Logo" />
       </div>
       
     
@@ -67,15 +85,18 @@ export const NavBar=()=> {
     </nav>
 
       
-    <div className='user'>
-        {isAuthenticated ? (
-          <button className="logout" onClick={handleAuthClick}>Log Out</button>
+      <div className='user'>
+      {isAuthenticated ? (
+          <>
+            <button className="logout" onClick={handleAuthClick}>Log Out</button>
+            <img src={profilePic} alt="Profile" />
+          </>
         ) : (
-          <Link to="/SignIn" className="login">Sign In</Link>
+          <Link to="/General/signIn" className="login">Sign In</Link>
         )}
-        {isAuthenticated && <img src={profilePic} alt="profilePic" />}
       </div>
-    </header>
-  );
+
+  </header>
     
+  );
 }

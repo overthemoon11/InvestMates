@@ -1,27 +1,35 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
+import './LeftCompt.css'; 
 
 const LeftComponent = () => {
 
-
     return (
-        <div>
-            <h2>Counselling</h2>
-            <nav>
-               <h4>TOP PICKS</h4>
-                  <ul>
-                     <li><a href="#beginners" class="menu-item">Stock Market for Beginners</a></li>
-                     <li><a href="#trading" class="menu-item">Simple Trading</a></li>
-                  </ul>
-               <h4>RECOMMENDATION</h4>
-                  <ul>
-                     <li><a href="#stocks" class="menu-item">Stocks & Investing</a></li>
-                  </ul>
-                <h4>OTHERS</h4>
-            </nav>
+      <div class ="CounLeftCompt">
+      <h2>Counselling</h2>
+      <nav className="CounsellingLeft-nav"> 
+         <div class = "classify">
+            <h4>TOP PICKS</h4>
+               <ul>
+                <li><Link to="/beginners" className="menu-item">Stock Market for Beginners</Link></li>
+                <li><Link to="/trading" className="menu-item">Simple Trading</Link></li>
+               </ul>
          </div>
-    )
-    
+
+         <div class = "classify">
+         <h4>RECOMMENDATION</h4>
+               <ul>
+                  <li><Link to="/stocks" className="menu-item">Stocks & Investing</Link></li>
+               </ul>
+         </div>
+
+         <div class = "classify">
+            <h4>OTHERS</h4>
+         </div>
+         
+      </nav>
+   </div>
+);
 };
 
 export default LeftComponent;

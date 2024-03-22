@@ -1,5 +1,103 @@
+.logoContainer {
+    padding: 1.6% 2.9%;
+    height: 4em;
+}
+
+
+.SignInMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -20px;
+    margin-top: -110px;
+    height: 100vh;
+}
+   
+
+.login-container{
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 6.5%;
+}
+
+
+.login-box{
+    background-color: white;
+    padding: 3em;
+    padding-left: 2.5em;
+    padding-right: 2.7em;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-width: 300px;
+    height: 100%;
+    max-height: 200%;
+}
+
+h2{
+    text-align: start;
+    padding-bottom: 0.4em;
+    font-size: 1.8em;
+    font-weight: bolder;
+}
+
+.input-group{
+    text-align: start;
+    padding-bottom: 1.7em;
+    padding-right: 3.1em;
+}
+
+.input-group label{
+    font-size: 1em;
+    display: block;
+    margin-bottom: 0.85em;
+}
+
+.input-group input{
+    width: 100%;
+    padding: .8em;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.register{
+    margin-top: 1%;
+}
+
+.checkbox-group{
+    font-family: 'Poppins', sans-serif;
+    text-align:center;
+    font-size: .9em; 
+    size: 2em;
+    align-items: center;
+    display: flex;
+    gap: 0.4em;
+    margin-top: -8px;
+}
+
 .checkbox-group input[type ="checkbox"]{
     cursor: pointer;
+}
+
+.registerLink{
+    text-decoration: none;
+    color: #5690DB;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+    border: none;
+    margin: 2.5% 1%;
+    
+}
+
+.registerLink:hover{
+    color: #5690DB;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 
@@ -39,3 +137,4 @@
     width:250px;
     height:290px;
 }
+

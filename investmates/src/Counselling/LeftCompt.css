@@ -1,0 +1,64 @@
+.CounsellingLeft-nav {
+    display: block;
+    padding-top: 0;
+}
+
+.CounsellingLeft-nav ul {
+    list-style-type: none;
+    padding-left: 2.2em;
+}
+
+
+.CounsellingLeft-nav ul li a {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
+    padding-bottom: 1%;
+    font-weight: lighter;
+    text-decoration: none;
+    color: black;
+}
+
+.classify{
+    margin-bottom: 15%
+}
+
+
+.CounsellingLeft-nav ul li a:hover,
+.CounsellingLeft-nav ul li a:active {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black; 
+}
+
+.CounLeftCompt h2{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.8em;
+    padding-left: 0.5em;
+    margin-top: 0.5%;
+    color: #C07287;
+    font-weight: bold;
+}
+
+.CounLeftCompt h3{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.6em;
+    padding-left: 2.4em;
+    padding-top: 0.3em;
+    color: #6964AF;
+    font-weight: bolder;
+}
+
+
+.CounLeftCompt h4{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.3em;
+    padding-left: 1.1em;
+    margin-top: -10px;
+    color: #6964AF;
+    font-weight: bolder;
+}
+
+
+
