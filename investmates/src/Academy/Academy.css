@@ -1,0 +1,40 @@
+.topics {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.quizButton {
+    padding: 15px;
+    background-color: #a2a0c8;
+    color: white;
+    align-self: start;
+    border: 0;
+    margin-top: 25px;
+}
+
+
+.preButton {
+    padding: 15px;
+    background-color: #4B469F;
+    color: white;
+    border: 0;
+    margin-top: 30px;
+    width: 100px;
+}
+
+
+.nextButton {
+    padding: 15px;
+    background-color: #4B469F;
+    color: white;
+    border: 0;
+    margin-top: 30px;
+    width: 100px;
+}
+
+
+.content {
+    font-size: 18px;
+}
