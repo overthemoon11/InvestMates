@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import LeftRightLayout from '../components/LeftRightColumn/LeftRightLayout.js';
-import LeftNews from './LeftNews.js'; // Import your left component
-import RightNews from './RightNews.js'; // Import your right component
+import LeftNews from './LeftNews.js';
+import RightNews from './RightNews.js';
 
 
 
@@ -25,7 +25,7 @@ const News = ({ title, content }) => {
     const [tempCollections, setTempCollections] = useState([]);
 
 
-    const apiKey = '8207fa107ccf4949a4ca9e07f5a3a039'; // Replace this with your News API key
+    const apiKey = '14224112428147fab821eb716dbf3416'; // Replace this with your News API key
     //https://newsapi.org/v2/everything?q=${newsType}&apiKey=8207fa107ccf4949a4ca9e07f5a3a039
 
     // const history = createBrowserHistory();
