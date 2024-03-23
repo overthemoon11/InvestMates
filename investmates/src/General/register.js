@@ -23,8 +23,6 @@ export const RegistrationPage=()=>{
 
         <div className="registrationContainer"> 
 
-            
-
             <div className="left-section">
 
             <div className="logoWrapper">

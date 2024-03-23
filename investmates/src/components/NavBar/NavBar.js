@@ -50,7 +50,6 @@ export const NavBar=()=> {
             <Link to="/Academy/EvaluateStock">How to Evaluate Stocks</Link>
             <Link to="/Academy/FinancialIntermediates">All About Financial Intermediaries</Link>
             <Link to="/Academy/OnlineTrading">Essential About Online Trading</Link>
-            <Link to="/Academy/ViewAll">VIEW ALL</Link>
           </div>
         </div>
       </div>
