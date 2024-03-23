@@ -1,13 +1,14 @@
-import { useEffect } from 'react';
+import Alert from "./Alert";
 import { Beginner } from "./BeginnerBasics";
 
 export const Evaluate=()=>{
-    useEffect(() => {
-        alert("To access exclusive premium content and unlock a world of valuable insights, subscribe now!");
-    }, []); // Empty dependency array ensures the effect runs only once after the component mounts
-
+    const handleAlert = () => {
+        Alert(); // Call the Alert function
+    };
+    
     return (
         <div>
+            {handleAlert()} {/* Call the function and render the result */}
             <Beginner />
         </div>
     );
