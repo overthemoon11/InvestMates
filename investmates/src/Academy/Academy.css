@@ -4,37 +4,58 @@
     font-size: 18px;
 }
 
-
 .quizButton {
-    padding: 15px;
-    background-color: #a2a0c8;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    padding: 10px 40px;  /* Top/bottom and left/right padding */
+    margin-top: 4%;
+    border: none;
+    border-radius: 7.5px;
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    outline: none; 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+    background-color:#827ECD;
     color: white;
     align-self: start;
-    border: 0;
-    margin-top: 25px;
 }
-
 
 .preButton {
-    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    padding: 10px 35px;  /* Top/bottom and left/right padding */
+    margin-top: 4%;
+    border: none;
+    border-radius: 7.5px;
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    outline: none; 
+    transition: background-color 0.3s, box-shadow 0.3s; 
     background-color: #4B469F;
     color: white;
-    border: 0;
-    margin-top: 30px;
-    width: 100px;
 }
-
 
 .nextButton {
-    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    padding: 10px 35px;  /* Top/bottom and left/right padding */
+    margin-top: 4%;
+    border: none;
+    border-radius: 7.5px;
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    outline: none; 
+    transition: background-color 0.3s, box-shadow 0.3s; 
     background-color: #4B469F;
     color: white;
-    border: 0;
-    margin-top: 30px;
-    width: 100px;
 }
-
 
 .content {
     font-size: 18px;
+    color: black;
+    font-weight: normal;
+}
+
+.text{
+    font-family: 'Poppins',sans-serif;
 }

@@ -2,10 +2,9 @@ import React from 'react';
 import '../Academy.css';
 
 
-const WhatIsAnInvestment = () => {
+const Dummy = () => {
     return(
         <div className='text'>
-            <h1 className='title'>What is an Investment?</h1>
             <p className='content'>This tutorial explains what is investment, inflation and why investment matters.</p>
             <br/>
             <h3>Investment involves allocating resources with the expectation of generating income or profit in the future.</h3>
@@ -25,4 +24,4 @@ const WhatIsAnInvestment = () => {
 };
 
 
-export default WhatIsAnInvestment
+export default Dummy

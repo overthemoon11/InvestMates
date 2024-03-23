@@ -1,11 +1,11 @@
 import React from 'react';
-import './Academy.css';
+import '../Academy.css';
 
 
-const IntroductionToTheCourse = ({}) => {
+const IntroductionToTheCourse = () => {
     return (
-        <div>
-            <h1>Introduction to the Course</h1>
+        <div className='text'>
+            <h1 className='title'>Introduction to the Course</h1>
             <p className='content'>Welcome to the Beginner's Guide to Investment! This course is designed to be your comprehensive roadmap into the captivating world of investing. Whether you're a complete novice or someone seeking to reinforce their understanding, this course is tailored to accommodate all levels of experience.</p>
             <br/>
             <h2>Mission</h2>

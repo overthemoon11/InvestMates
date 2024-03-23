@@ -1,8 +1,11 @@
 import React from 'react';
 import './Academy.css';
 
+const RightComponent = ({ content, onPreviousClick, onNextClick, index, topics }) => {
 
-const RightComponent = ({ content }) => {
+    const isFirstTopic = index===0;
+    const isLastTopic = index===(topics.length-1)
+
     return (
         <div>
             {content}
@@ -10,12 +13,15 @@ const RightComponent = ({ content }) => {
                 <button className='quizButton'>Test Your Understanding</button>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <button className='preButton'>&lt; Previous</button>
-                <button className='nextButton'> Next &gt;</button>
+                {!isFirstTopic && (
+                    <button className='preButton' onClick={onPreviousClick}>&lt; Previous</button>
+                )}
+                {!isLastTopic && (
+                    <button className='nextButton' onClick={onNextClick}> Next &gt;</button>
+                )}
             </div>
         </div>
     );
 };
-
 
 export default RightComponent;
