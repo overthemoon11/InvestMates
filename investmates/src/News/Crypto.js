@@ -1,5 +1,14 @@
 import React from 'react';
 
-export const Crypto=()=>{
-    return <h1>crypto</h1>
+import News from './News';
+
+const title = "Crypto"
+const content = ["1223", "abc"]
+export const Crypto = () => {
+
+    return <News
+        title={title}
+        content={content}
+    />
+
 };

@@ -1,0 +1,36 @@
+.news-container{
+    font-family: 'Poppins';
+}
+
+.news-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #314871;
+    list-style-type: none;
+    margin-left: -11%;
+  }
+
+.news-image{
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.news-block{
+    width: 300px;
+    height: 30%;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+
+.content-image{
+    width: 80%;
+    height: 50%;
+    border-radius: 25px;
+}
+
+.publishtime{
+    font-size: medium;
+    text-align: end;
+}

@@ -1,5 +1,12 @@
 import React from 'react';
+import News from './News';
 
-export const Financial=()=>{
-    return <h1>financial</h1>
+const title = "Financial"
+const content = ["1223", "abc"]
+export const Financial = () => {
+
+    return <News
+        title={title}
+        content={content}
+    />
 };

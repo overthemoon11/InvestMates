@@ -1,5 +1,13 @@
 import React from 'react';
+import News from './News';
 
-export const Company=()=>{
-    return <h1>companies</h1>
+const title = "Company"
+const content = ["1223", "abc"]
+
+export const Company = () => {
+
+    return <News
+        title={title}
+        content={content}
+    />
 };
