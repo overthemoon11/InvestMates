@@ -1,7 +1,10 @@
 .topics {
-    padding: 10px;
+    margin-bottom: 18px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.2em;
+    font-family: 'Poppins',sans-serif;
+    padding-left: 1.1em;
+    padding-bottom: 10px;
 }
 
 .quizButton {
@@ -20,7 +23,7 @@
     align-self: start;
 }
 
-.preButton {
+.preButton, .nextButton {
     font-family: 'Poppins', sans-serif;
     font-size: 0.9em;
     padding: 10px 35px;  /* Top/bottom and left/right padding */
@@ -35,19 +38,14 @@
     color: white;
 }
 
-.nextButton {
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.9em;
-    padding: 10px 35px;  /* Top/bottom and left/right padding */
-    margin-top: 4%;
-    border: none;
-    border-radius: 7.5px;
-    cursor: pointer; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    outline: none; 
-    transition: background-color 0.3s, box-shadow 0.3s; 
-    background-color: #4B469F;
-    color: white;
+.preButton:hover, .nextButton:hover {
+    background-color: #57539e;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.quizButton:hover {
+    background-color: #9995E1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .content {
@@ -56,6 +54,19 @@
     font-weight: normal;
 }
 
-.text{
+.text {
+    font-family: 'Poppins',sans-serif;
+}
+
+.categoryHeader {
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.8em;
+    padding-left: 0.5em;
+    margin-top: 1.0%;
+    color: #C07287;
+    font-weight: bold;
+}
+
+.title {
     font-family: 'Poppins',sans-serif;
 }

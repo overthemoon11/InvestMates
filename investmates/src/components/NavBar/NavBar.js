@@ -45,7 +45,7 @@ export const NavBar=()=> {
         <div className="dropdown">
           <Link className='link'>Academy</Link>
           <div className="dropdown-content">
-            <Link to="./Academy/BeginnerBasics">Beginner Basics</Link>
+            <Link to="/Academy/BeginnerBasics">Beginner Basics</Link>
             <Link to="/Academy/CapitalMarket">Capital Market and Their Functioning</Link>
             <Link to="/Academy/EvaluateStock">How to Evaluate Stocks</Link>
             <Link to="/Academy/FinancialIntermediates">All About Financial Intermediaries</Link>

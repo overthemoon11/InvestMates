@@ -15,7 +15,7 @@ export const SignIn=()=>{
     const handleSubmit = (event) => {
         event.preventDefault(); 
         signIn(); 
-        navigate('/Academy/BeginnerBasic'); 
+        navigate("/Academy/BeginnerBasics"); 
     };
 
     

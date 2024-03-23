@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LeftMenu from './LeftMenu';
 import RightComponent from './RightComponent.js';
+import Quiz from './Quiz.js';
 import LeftRightLayout from '../components/LeftRightColumn/LeftRightLayout.js';
 import IntroductionToTheCourse from './contents/IntroductionToTheCourse'
 import WhatIsAnInvestment from './contents/WhatIsAnInvestment'
@@ -20,6 +21,7 @@ export const Beginner=()=>{
                     "Stock Indexes",
                     "Assets, Liabilities, and Equity"];
 
+    const [isQuiz, setIsQuiz] = useState(false);
     const [content, setContent] = useState(<IntroductionToTheCourse/>);
     const [topic, setTopic] = useState(topics[0]);
     const [index, setIndex] = useState(0);
@@ -74,12 +76,23 @@ export const Beginner=()=>{
         }
     }
 
+    const handleQuizStart = (status) => {
+        setIsQuiz(status);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
     return (
       <div className="column-container">
-          <LeftRightLayout
-              leftComponent={<LeftMenu topics={topics} changeContent={changeContent} topic={topic} changeTopic={changeTopic} matchContent={matchContent}/>}
-              rightComponent={<RightComponent content={content} onPreviousClick={handlePreviousTopic} onNextClick={handleNextTopic} index={index} topics={topics}/>}
-            />
+        {!isQuiz ? (
+            <LeftRightLayout
+                leftComponent={<LeftMenu topics={topics} changeContent={changeContent} topic={topic} changeTopic={changeTopic} matchContent={matchContent}/>}
+                rightComponent={<RightComponent content={content} onPreviousClick={handlePreviousTopic} onNextClick={handleNextTopic} index={index} topics={topics} onQuizClick={handleQuizStart}/>}
+                />
+        ):
+        (
+            <Quiz startQuiz={handleQuizStart} topic={topic} />
+        ) }
+          
       </div>
     ) 
 };

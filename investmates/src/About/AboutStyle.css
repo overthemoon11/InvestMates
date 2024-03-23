@@ -1,0 +1,19 @@
+.about {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+    position: fixed; /* Position the element relative to the browser window */
+    width: 100%; /* Cover the entire width of the window */
+    height: 100vh; /* Cover the entire height of the window */
+    background-color: rgba(227, 214, 235, 0.47);
+}
+
+.titleAbout {
+    text-align: center;
+}
+
+.contentAbout {
+    padding: 2.0em 20.6em; /* Top and bottom padding of 2em, left and right padding of 20.6em */
+    font-size: large;
+    align-self: center;
+    background-color: rgba(210, 202, 215, 0.47);
+}

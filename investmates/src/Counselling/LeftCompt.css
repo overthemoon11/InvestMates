@@ -5,7 +5,7 @@
 
 .CounsellingLeft-nav ul {
     list-style-type: none;
-    padding-left: 2.2em;
+    padding-left: 4px;
 }
 
 
@@ -17,12 +17,12 @@
     font-weight: lighter;
     text-decoration: none;
     color: black;
+    padding-left: 2.5em;
 }
 
 .classify{
     margin-bottom: 15%
 }
-
 
 .CounsellingLeft-nav ul li a:hover,
 .CounsellingLeft-nav ul li a:active {

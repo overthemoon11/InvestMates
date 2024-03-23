@@ -4,8 +4,8 @@ import './Academy.css';
 const LeftMenu = ({topics, changeContent, topic, changeTopic, matchContent}) => {
 
     return (
-        <div className='text'>
-            <h2 style={{color: '#c07287', padding: "2px"}} >Beginner Basics</h2>
+        <div>
+            <h2 className='categoryHeader' >Beginner Basics</h2>
             {topics.map((topicName) => (
                 <div
                     className="topics"

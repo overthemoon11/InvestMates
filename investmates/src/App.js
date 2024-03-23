@@ -16,7 +16,6 @@ import { Capital } from './Academy/CapitalMarket';
 import { Evaluate } from './Academy/EvaluateStock';
 import { FinancialIntermediates } from './Academy/FinancialIntermediates';
 import { OnlineTrading } from './Academy/OnlineTrading';
-import { ViewAll } from './Academy/ViewAll';
 import { Company } from './News/Company';
 import { Crypto } from './News/Crypto';
 import { Financial } from './News/Financial';
@@ -36,15 +35,12 @@ function App() {
             <Route path="/General/register" element={<RegistrationPage />} />
             <Route path="/Counselling/partnerWebsite" element={<PartnerWebsite />} />
 
-
-
             <Route path="/Academy/BeginnerBasics" element={<><NavBar /><Beginner /></>} />
             <Route path="/Academy/CapitalMarket" element={<><NavBar /><Capital /></>} />
             <Route path="/Academy/EvaluateStock" element={<><NavBar /><Evaluate /></>} />
             <Route path="/Academy/FinancialIntermediates" element={<><NavBar /><FinancialIntermediates /></>} />
             <Route path="/Academy/OnlineTrading" element={<><NavBar /><OnlineTrading /></>} />
-            <Route path="/Academy/ViewAll" element={<><NavBar /><ViewAll /></>} />
-            
+
             <Route path="/Simulator/simulator" element={<><NavBar /><Simulator /></>} />
             
             <Route path="/Counselling/counselling" element={<><NavBar /><Counselling /></>} />
@@ -65,9 +61,6 @@ function App() {
 
     </Router>
 
-
-
-    
   );
 }
 

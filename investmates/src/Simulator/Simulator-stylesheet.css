@@ -71,23 +71,32 @@
     color: transparent;
     transition: border-color 0.3s ease;
 }
-
-  
+ 
 .purple-small-header{
-    color: #6964AF; 
-    font-family: poppins;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.3em;
+    padding-left: 0.9em;
+    margin-top: px;
+    color: #6964AF;
+    font-weight: bolder;
 }
   
 #pink-big-header{
-    color: #C07287; 
-    font-size: 160%; 
-    font-family: poppins;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.8em;
+    padding-left: 0.5em;
+    margin-top: 0.5%;
+    color: #C07287;
+    font-weight: bold;
 }
   
 #purple-big-header {
-    color: #6964AF; 
-    font-size: 160%;
-    font-family: poppins;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.6em;
+    padding-left: 0.5em;
+    padding-top: 0.3em;
+    color: #6964AF;
+    font-weight: bolder;
 }
 
 #span{
@@ -105,11 +114,24 @@
 }
 
 .BuyAndSell {
-    margin-left: 0px; /* Adjust the spacing between buttons */
-    background-color: #6964AF;
+    background-color:#827ECD;
     color: white;
-    border-color: white;
-    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    padding: 10px 25px;  /* Top/bottom and left/right padding */
+    margin-top: 4%;
+    border: none;
+    border-radius: 7.5px;
+    margin-left: 22%;
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    outline: none; 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.BuyAndSell:hover {
+    background-color: #9995E1 ;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow for a "lifted" effect */
 }
 
 #stock-price{
@@ -132,13 +154,14 @@
 }
 
 #stock-table {
+    padding-left: 1.8em;
     width: 90%;
 }
   
 .stock-table-body td {
   padding-top: 0.5%;
   padding-bottom: 5%;
-  padding-left: 8%;
+  padding-left: 18%;
 }
 
 .stock-container {
@@ -148,7 +171,7 @@
 
 #stock-graph {
     width: 50%;
-    height: 25%;
+    height: 50%;
     flex: 1; /* Equal flex value to #stock-company-data */
     margin-right: 5%; /* Adjust margin as needed */
     margin-top: 2%;
@@ -178,14 +201,42 @@
 }
 
 #investment-search-bar{
-    border-radius: 10px;
-    margin-bottom: 5%;
-    width: 70%;
+    width: 160px;
+    height: 40px;
+
+    /* Adding padding and margin */
+    margin-left: 1.1em;
+    padding-left: 23%;
+    margin-bottom: 0.8em;
+
+    /* Adding border */
+    border: 1px solid #a2a2a2;
+    border-radius: 5px;
+
+    /* Adding background color and text color */
+    background-color: #f8f8f8;
+    color: #333;
+
+    /* Adjusting font size and font family */
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+
+    /* Adjusting placeholder text color */
+    ::placeholder {
+        color: #999;
+    }
+
+    /* Adjusting focus state */
+    &:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+    }
 }
 
 #investment-search-bar-button{
-    width: 12%; /* Adjust width and height as needed */
-    height: 12%;
+    width: 10%; /* Adjust width and height as needed */
+    height: 10%;
     margin-right: 2%;
     margin-left: 2%;
     border-color: transparent;
@@ -205,13 +256,15 @@
   .order-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: 1em;
   }
   
   .order-table th, .order-table td {
-    padding: 1px;
-    text-align: center;
-    font-size: 70%;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px; 
+    font-size: 10px;
   }
   
   .order-table th {
@@ -230,6 +283,7 @@
   .order-date {
     text-align: left;
     font-size: smaller;
+    padding-left: 1.4em;
   }
   
 
@@ -238,9 +292,10 @@
   }
   
   .total-holding-table {
-    width: 80%;
+    width: 90%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: 1em;
   }
   
   .total-holding-table th,
@@ -263,10 +318,3 @@
   .total-holding-table tbody tr:hover {
     background-color: #f1f1f1;
   }
-  
-
-
-  
-
-
-  

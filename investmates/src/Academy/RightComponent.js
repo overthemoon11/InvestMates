@@ -1,7 +1,7 @@
 import React from 'react';
 import './Academy.css';
 
-const RightComponent = ({ content, onPreviousClick, onNextClick, index, topics }) => {
+const RightComponent = ({ content, onPreviousClick, onNextClick, index, topics, onQuizClick }) => {
 
     const isFirstTopic = index===0;
     const isLastTopic = index===(topics.length-1)
@@ -10,7 +10,7 @@ const RightComponent = ({ content, onPreviousClick, onNextClick, index, topics }
         <div>
             {content}
             <div>
-                <button className='quizButton'>Test Your Understanding</button>
+                <button className='quizButton' onClick={() => onQuizClick(true) }>Test Your Understanding</button>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                 {!isFirstTopic && (
