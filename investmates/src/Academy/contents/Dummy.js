@@ -5,7 +5,6 @@ import '../Academy.css';
 const Dummy = () => {
     return(
         <div className='text'>
-            <p className='content'>This tutorial explains what is investment, inflation and why investment matters.</p>
             <br/>
             <h3>Investment involves allocating resources with the expectation of generating income or profit in the future.</h3>
             <ul className='content'>

@@ -31,6 +31,7 @@ export const Beginner=()=>{
     const changeTopic = (topic) => {
         setTopic(topic);
         changeIndex(topics.indexOf(topic));
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     const changeIndex = (index) => {
@@ -46,6 +47,7 @@ export const Beginner=()=>{
             changeContent(
             <div>
                <h1 className='text title'>{topic}</h1>
+               <p className='content text'>This tutorial explains what is {topic}.</p>
                <Dummy />
             </div>
             )
