@@ -24,15 +24,9 @@ const News = ({ title, content }) => {
     const [tempLikes, setTempLikes] = useState([]);
     const [tempCollections, setTempCollections] = useState([]);
 
-<<<<<<< HEAD
-
-    const apiKey = '101e2f362fb74c5e95afe8ee056b18db'; // Replace this with your News API key
-    //https://newsapi.org/v2/everything?q=${newsType}&apiKey=8207fa107ccf4949a4ca9e07f5a3a039
-=======
     const apiKey = '101e2f362fb74c5e95afe8ee056b18db'; // Replace this with your News API key
     //https://newsapi.org/v2/everything?q=${newsType}&apiKey=8207fa107ccf4949a4ca9e07f5a3a039
 
->>>>>>> f21494534f25b8194c9427f5d413cbffec8cb844
 
     // const history = createBrowserHistory();
     // console.log(history);
