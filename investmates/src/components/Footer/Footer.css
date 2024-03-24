@@ -2,8 +2,8 @@
     display: flex;
     justify-content: left;
     border-top: 0.085rem solid #9297AE;
-    background-color: #FCF8FF;
-    color: #261862;
+    background-color: #fffdfd;
+    color: black;
     font-weight: bold;
 }
 
@@ -15,25 +15,27 @@
 
 .footer-contact{
     font-family: 'Poppins';
-    margin-left: 5%;
-    margin-top: 2%;
+    margin-left: 10%;
+    margin-top: 5%;
 }
 
 .footer-bottom{
     font-family: 'Poppins';
     margin-bottom: 10%;
-    margin-left: 7%;
-    margin-top: 2%;
+    margin-left: 12%;
+    margin-top: 4.5%;
 }
 
 .inputemail{
     font-family: 'Poppins';
     border: none;
-    color: #261862;
+    color: black;
     width: 60%;
     border-radius: 20px;
-    padding: 2%;
+    padding: 2.5%;
+    margin-top: 5%;
     margin-right: 3%;
+    background-color: rgb(200, 200, 200);
 }
 
 .inputemail:focus {
@@ -42,29 +44,28 @@
 }
 
 .inputemail::placeholder {
-    color: #261862;
+    color: black;
 }
 
 .submitemail{
     font-family: 'Poppins';
     border: none;
-    background-color: white;
-    color: #261862;
-    width: 90px;
+    background-color: rgb(200, 200, 200);
+    color: black;
     border-radius: 20px;
-    padding: 2%;
+    padding: 2.5%;
     cursor: pointer;
-
+    text-align: center;
 }
 
 .social-links img{
     height: 50px;
     margin-right: 10px;
-    
+    margin-top: 15px;
 }
 
 .email{
-    color: #261862;
+    color: black;
     text-decoration: none;
 }
 
@@ -73,7 +74,7 @@
 }
 
 .web{
-    color: #261862;
+    color: black;
     text-decoration: none;
 }
 .web:hover{

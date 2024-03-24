@@ -11,9 +11,6 @@ export const Footer = () => {
     return (
         <footer>
             <div class="footer-content">
-                <div class="footer-logo">
-                    <img src={logo} alt="Your Website Logo" />
-                </div>
                 <div class="footer-bottom">
                     <p className='slogan'>Subscribe for Updates and Exclusive Content!</p>
                     <form action="#" method="post" class="subscribe-form">
