@@ -9,12 +9,16 @@
     color: #314871;
     list-style-type: none;
     margin-left: -11%;
+    cursor: pointer;
+
   }
 
 .news-image{
     width: 300px;
     height: 200px;
     border-radius: 15px;
+    cursor: pointer;
+
 }
 
 .news-block{

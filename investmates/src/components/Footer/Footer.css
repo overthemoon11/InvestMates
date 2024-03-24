@@ -53,6 +53,8 @@
     width: 90px;
     border-radius: 20px;
     padding: 2%;
+    cursor: pointer;
+
 }
 
 .social-links img{

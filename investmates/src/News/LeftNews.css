@@ -55,14 +55,17 @@
 
 .add-button img:hover{
     content: url('../assets/images/addbuttonpink.png');
+    cursor: pointer;
 }
 
 .like-button img:hover{
     content: url('../assets/images/likebuttonpink.png');
+    cursor: pointer;
 }
 
 .collect-button img:hover{
     content: url('../assets/images/collectbuttonpink.png');
+    cursor: pointer;
 }
 
 .text-area{
@@ -96,6 +99,7 @@
     border-radius: 10px;
     width: 80px;
     height: 30px;
+    cursor: pointer;
 }
 
 .savenote-container{
@@ -156,6 +160,7 @@
     transform: translateY(-50%); /* Adjust vertical alignment */
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .searchbutton img {
@@ -213,6 +218,7 @@
     font-weight: 400;
     margin-left: -20%;
     padding-right: 5%;
+    cursor: pointer;
 }
 
 .temp-like:hover{
@@ -227,6 +233,7 @@
     font-weight: 400;
     margin-left: -20%;
     padding-right: 5%;
+    cursor: pointer;
 }
 
 .temp-collect:hover{
