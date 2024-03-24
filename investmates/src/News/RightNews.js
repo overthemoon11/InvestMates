@@ -41,7 +41,6 @@ const RightNews = ({
             {selectedNews && typeof selectedNews === 'string' ? (
               <>
                 <h2>{JSON.parse(selectedNews).title}</h2>
-                <p>{JSON.parse(selectedNews).url}</p>
                 <p>{JSON.parse(selectedNews).publishedAt}</p>
                 <img className='content-image' src={JSON.parse(selectedNews).urlToImage} alt="News Thumbnail" />
                 <p>{JSON.parse(selectedNews).content}</p>
@@ -50,7 +49,6 @@ const RightNews = ({
             ) : (
               <>
                 <h2>{selectedNews.title}</h2>
-                <p>{selectedNews.url}</p>
                 <p>{selectedNews.publishedAt}</p>
                 <img className='content-image' src={selectedNews.urlToImage} alt="News Thumbnail" />
                 <p>{selectedNews.content}</p>
