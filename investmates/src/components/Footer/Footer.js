@@ -19,7 +19,7 @@ export const Footer = () => {
                     </form>
                 </div>
                 <div class="footer-contact">
-                    <p>Website: <a className='web' href="https://shuhui22004830.blogspot.com/2024/01/wix-2001-sulam-self-reflection-tan-shu.html">www.InvestMates.com</a></p>
+                    <p>Website: <a className='web' href="https://github.com/overthemoon11/InvestMates">www.InvestMates.com</a></p>
                     <p>Email: <a className='email' href="mailto:shu.hui051603@gmail.com">shu.hui051603@gmail.com</a></p>
                     <p>Phone: +60 17 840 0523</p>
                     <div class="social-links">
