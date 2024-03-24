@@ -55,14 +55,17 @@
 
 .add-button img:hover{
     content: url('../assets/images/addbuttonpink.png');
+    cursor: pointer;
 }
 
 .like-button img:hover{
     content: url('../assets/images/likebuttonpink.png');
+    cursor: pointer;
 }
 
 .collect-button img:hover{
     content: url('../assets/images/collectbuttonpink.png');
+    cursor: pointer;
 }
 
 .text-area{
@@ -96,6 +99,7 @@
     border-radius: 10px;
     width: 80px;
     height: 30px;
+    cursor: pointer;
 }
 
 .savenote-container{
@@ -156,6 +160,7 @@
     transform: translateY(-50%); /* Adjust vertical alignment */
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .searchbutton img {
@@ -183,4 +188,54 @@
     padding: 5%;
     margin-right: 1.5%;
     font-family: 'Poppins';
+}
+
+.likelink{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+}
+
+.likelink:hover{
+    color: #C07287;
+}
+
+.collectlink{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+}
+
+.collectlink:hover{
+    color: #C07287;
+}
+
+.temp-like{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    list-style-type: none;
+    font-weight: 400;
+    margin-left: -20%;
+    padding-right: 5%;
+    cursor: pointer;
+}
+
+.temp-like:hover{
+    color: #C07287;
+}
+
+.temp-collect{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    list-style-type: none;
+    font-weight: 400;
+    margin-left: -20%;
+    padding-right: 5%;
+    cursor: pointer;
+}
+
+.temp-collect:hover{
+    color: #C07287;
 }

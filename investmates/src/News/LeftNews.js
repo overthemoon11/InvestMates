@@ -41,7 +41,7 @@ const LeftNews = ({
       <div className="left-column">
         {!showArticle ? (
           <div>
-            <h1 className='news-topic'>{title} News</h1>
+            <h2 className='news-topic'>{title} News</h2>
             <h3 className='today-date'>- {new Date().toDateString()}</h3>
             <div className='searchbox-container'>
               <input className='searchbox' type="text" placeholder="Search news..." value={inputText} onChange={(e) => handleInput(e)}></input>
@@ -49,22 +49,22 @@ const LeftNews = ({
             </div>
             <div className="likecontent-container">
               <h2 className="like-title">LIKES</h2>
-              <p>Forest docked four points for financial rules breach</p>
-              <ul>
+              {/* <a className='likelink' href="https://www.bbc.co.uk/sport/football/68594865"><p>Forest docked four points for financial rules breach</p></a> */}
+              <ul className='temp-like'>
                 {tempLikes.map((news, index) => (
-                  <li key={index}>{news}</li>
+                  <li key={index} onClick={() => onNewsClick(news)}>{JSON.parse(news).title}</li>
                 ))}
                 {likes.map((news, index) => (
-                  <li key={index}>{news.title}</li>
+                  <li key={index} >{news.title}</li>
                 ))}
               </ul>
             </div>
             <div className="collectcontent-container">
               <h2 className="collect-title">COLLECTS</h2>
-              <p>Radio is seeing red</p>
-              <ul>
+              {/* <a className='collectlink' href="https://www.theverge.com/2024/3/12/24098990/radio-public-layoffs-wbur-npr-rooster-teeth-zaslov-warner-brothers"><p>Radio is seeing red</p></a> */}
+              <ul className='temp-collect'>
                 {tempCollections.map((news, index) => (
-                  <li key={index}>{news}</li>
+                  <li key={index} onClick={() => onNewsClick(news)}>{JSON.parse(news).title}</li>
                 ))}
                 {collections.map((news, index) => (
                   <li key={index}>{news.title}</li>
@@ -75,23 +75,47 @@ const LeftNews = ({
           </div>
         ) : (
           <div>
-            <h1 className='news-topic'>{title} News</h1>
-            <h3 className='content-title'>{selectedNews.title}</h3>
-            <p className='published-time'>published at: {selectedNews.publishedAt}</p>
-            <div className="buttons">
-              <button className='add-button' onClick={() => onAddNote('')}><img src={showNoteInput ? addiconhover : addicon} alt="Add" /></button>
-              <button className='like-button' onClick={() => onLike(selectedNews)}><img src={isLiked ? likeiconhover : likeicon} alt="Like" /></button>
-              <button className='collect-button' onClick={() => onCollect(selectedNews)}><img src={isCollected ? collecticonhover : collecticon} alt="Collect" /></button>
-            </div>
-            {showNoteInput && (
-              <>
-                <textarea className='text-area' value={tempNoteInput} onChange={(e) => setTempNoteInput(e.target.value)} placeholder="Write your note here" />
-                <div className='savenote-container'>
-                  <button className='savenote-button' onClick={handleAddNote}>Save</button>
+            {selectedNews && typeof selectedNews === 'string' ? (
+              <div>
+                <h2 className='news-topic'>{title} News</h2>
+                <h3 className='content-title'>{JSON.parse(selectedNews).title}</h3>
+                <p className='published-time'>published at: {JSON.parse(selectedNews).publishedAt}</p>
+                <div className="buttons">
+                  <button className='add-button' onClick={() => onAddNote('')}><img src={showNoteInput ? addiconhover : addicon} alt="Add" /></button>
+                  <button className='like-button' onClick={() => onLike(selectedNews)}><img src={isLiked ? likeiconhover : likeicon} alt="Like" /></button>
+                  <button className='collect-button' onClick={() => onCollect(selectedNews)}><img src={isCollected ? collecticonhover : collecticon} alt="Collect" /></button>
                 </div>
-              </>
+                {showNoteInput && (
+                  <>
+                    <textarea className='text-area' value={tempNoteInput} onChange={(e) => setTempNoteInput(e.target.value)} placeholder="Write your note here" />
+                    <div className='savenote-container'>
+                      <button className='savenote-button' onClick={handleAddNote}>Save</button>
+                    </div>
+                  </>
+                )}
+                {noteContent && <p className='savednote-content'>Saved Note: {noteContent}</p>}
+              </div>
+            ) : (
+              <div>
+                <h2 className='news-topic'>{title} News</h2>
+                <h3 className='content-title'>{selectedNews.title}</h3>
+                <p className='published-time'>published at: {selectedNews.publishedAt}</p>
+                <div className="buttons">
+                  <button className='add-button' onClick={() => onAddNote('')}><img src={showNoteInput ? addiconhover : addicon} alt="Add" /></button>
+                  <button className='like-button' onClick={() => onLike(selectedNews)}><img src={isLiked ? likeiconhover : likeicon} alt="Like" /></button>
+                  <button className='collect-button' onClick={() => onCollect(selectedNews)}><img src={isCollected ? collecticonhover : collecticon} alt="Collect" /></button>
+                </div>
+                {showNoteInput && (
+                  <>
+                    <textarea className='text-area' value={tempNoteInput} onChange={(e) => setTempNoteInput(e.target.value)} placeholder="Write your note here" />
+                    <div className='savenote-container'>
+                      <button className='savenote-button' onClick={handleAddNote}>Save</button>
+                    </div>
+                  </>
+                )}
+                {noteContent && <p className='savednote-content'>Saved Note: {noteContent}</p>}
+              </div>
             )}
-            {noteContent && <p className='savednote-content'>Saved Note: {noteContent}</p>}
           </div>
 
         )}

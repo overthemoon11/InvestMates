@@ -6,11 +6,17 @@ import './RightNews.css';
 const RightNews = ({
   title,
   showArticle,
+  setShowArticle,
   newsData,
   selectedNews,
   onNewsClick,
-  sacascOnClick
+  sacascOnClick,
+  tempLikes
 }) => {
+
+  const handleBackClick = () => {
+    setShowArticle(false); // Set showArticle to false when "Back" button is clicked
+  };
 
 
   return (
@@ -32,15 +38,30 @@ const RightNews = ({
         ) :
 
           <div className="content-column">
-            {selectedNews && (
+            {selectedNews && typeof selectedNews === 'string' ? (
+              <>
+                <h2>{JSON.parse(selectedNews).title}</h2>
+                <p>{JSON.parse(selectedNews).publishedAt}</p>
+                <img className='content-image' src={JSON.parse(selectedNews).urlToImage} alt="News Thumbnail" />
+                <p>{JSON.parse(selectedNews).content}</p>
+                <button className='backnews' onClick={handleBackClick}>Back</button>
+              </>
+            ) : (
               <>
                 <h2>{selectedNews.title}</h2>
                 <p>{selectedNews.publishedAt}</p>
                 <img className='content-image' src={selectedNews.urlToImage} alt="News Thumbnail" />
                 <p>{selectedNews.content}</p>
+                <button className='backnews' onClick={handleBackClick}>Back</button>
               </>
             )}
-          </div>}
+          </div>
+
+
+
+        }
+
+
       </div>
     </div>
   );
