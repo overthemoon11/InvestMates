@@ -25,7 +25,7 @@ const News = ({ title, content }) => {
     const [tempCollections, setTempCollections] = useState([]);
 
 
-    const apiKey = '8207fa107ccf4949a4ca9e07f5a3a039'; // Replace this with your News API key
+    const apiKey = '101e2f362fb74c5e95afe8ee056b18db'; // Replace this with your News API key
     //https://newsapi.org/v2/everything?q=${newsType}&apiKey=8207fa107ccf4949a4ca9e07f5a3a039
 
     // const history = createBrowserHistory();
@@ -75,22 +75,34 @@ const News = ({ title, content }) => {
     }
 
     const handleLike = (news) => {
-        if (tempLikes.includes(news.title)) {
-            setTempLikes(tempLikes.filter((item) => item !== news.title));
+        // Check if the news object is already in tempLikes
+        const existsInLikes = tempLikes.some(item => item.title === news.title);
+
+        if (existsInLikes) {
+            // Remove the news object from tempLikes
+            const updatedLikes = tempLikes.filter(item => item.title !== news.title);
+            setTempLikes(updatedLikes);
             setIsLiked(false);
         } else {
-            setTempLikes([...tempLikes, news.title]);
+            // Add the news object to tempLikes
+            const updatedLikes = [...tempLikes, JSON.stringify(news)];
+            setTempLikes(updatedLikes);
             setIsLiked(true);
         }
     };
-
-
     const handleCollect = (news) => {
-        if (tempCollections.includes(news.title)) {
-            setTempCollections(tempCollections.filter((item) => item !== news.title));
+        // Check if the news object is already in tempLikes
+        const existsInCollect = tempCollections.some(item => item.title === news.title);
+
+        if (existsInCollect) {
+            // Remove the news object from tempLikes
+            const updatedCollect = tempCollections.filter(item => item.title !== news.title);
+            setTempCollections(updatedCollect);
             setIsCollected(false);
         } else {
-            setTempCollections([...tempCollections, news.title]);
+            // Add the news object to tempLikes
+            const updatedCollect = [...tempCollections, JSON.stringify(news)];
+            setTempCollections(updatedCollect);
             setIsCollected(true);
         }
     };
@@ -147,6 +159,7 @@ const News = ({ title, content }) => {
                         tempCollections={tempCollections}
                         handleInput={handleInput}
                         inputText={inputText}
+                        newsData={newsData}
                     />}
                     rightComponent={<RightNews
                         title={title}
@@ -156,6 +169,8 @@ const News = ({ title, content }) => {
                         onCategoryChange={handleCategoryChange}
                         onNewsClick={handleNewsClick}
                         sacascOnClick={sacascOnClick}
+                        setShowArticle={setShowArticle}
+                        tempLikes={tempLikes}
                     />}
                 />
             </div>
